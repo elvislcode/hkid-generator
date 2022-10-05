@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hkid-generator';
+  appTitle: string = 'HKID Generator | 香港身份證號碼生成器';
+
+  constructor(
+    private meta: Meta,
+    private title: Title
+  ) {
+    meta.addTags([
+      {name: 'description', content: 'Generate and validate HKID | 生成與驗證香港身份證號碼'},
+      {name: 'keywords', content: 'generate, produce, validate, check, HKID, Hong Kong Identity Card, 生成, 生產, 產生, 驗證, 香港身份證, 香港身份證號碼'},
+    ]);
+    title.setTitle(this.appTitle);
+  }
 }
