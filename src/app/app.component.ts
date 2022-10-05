@@ -14,6 +14,7 @@ export class AppComponent {
     private title: Title
   ) {
     meta.addTags([
+      {name: 'google-site-verification', content: 'nPJpe5QdvxqFWaKW0c1gdiCJmxyA9QQDaegr7X7AARQ'},
       {name: 'description', content: 'Generate and validate HKID | 生成與驗證香港身份證號碼'},
       {name: 'keywords', content: 'generate, produce, validate, check, HKID, Hong Kong Identity Card, 生成, 生產, 產生, 驗證, 香港身份證, 香港身份證號碼'},
     ]);
